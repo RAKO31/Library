@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="syt">
+    <link rel="stylesheet" href="sytle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <button data-open-modal>Add Book</button>
+    <div class="bookList"></div>
     <dialog data-modal>
-        <form action="dialog">
+        <form action="dialog" class="details">
             <label for="name">Enter Book name</label>
-            <input type="text" name="name" id="name">
-            <button data-close-modal>ADD</button>
+            <input type="text" name="name" id="bookname">
+            <label for="author">Enter Author's name</label>
+            <input type="text" name="author" id="author">
+            <label for="pages">Enter No Of Pages</label>
+            <input type="number" name="pages" id="pages">
+            <button type="submit" class="add">Submit</button>
+            <button data-close-modal>Close</button>
         </form>
     </dialog>
     <script src="script.js"></script>
